@@ -106,6 +106,8 @@ cd mt-trading-bot
 
 Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the dashboard. Use the controls to select the base currency, target currencies, interval, account size, and risk percentage. The dashboard will display real-time market data, analysis, and predictions.
 
+LINK TO THE LIVE DEMO [https://market-analysis-platfom-front-j0wmmqjr5.vercel.app/](https://market-analysis-platfom-front-j0wmmqjr5.vercel.app)
+
 ```
 
 ```
