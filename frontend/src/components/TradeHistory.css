@@ -1,0 +1,24 @@
+.trade-history {
+  padding: 2rem;
+}
+
+.trade-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.trade-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trade-item span {
+  flex: 1;
+  text-align: center;
+}

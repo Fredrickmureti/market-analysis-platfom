@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trade-list,
+.analysis-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.trade-item,
+.analysis-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trade-item span,
+.analysis-item span {
+  flex: 1;
+  text-align: center;
+}
+
+.dashboard,
+.trade-history,
+.analysis {
+  padding: 2rem;
+}
