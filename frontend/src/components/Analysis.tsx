@@ -19,9 +19,9 @@ const Analysis: React.FC = () => {
             <h1>Market Analysis</h1>
             <ul className="analysis-list">
                 {analysis.map(item => (
-                    <li key={item._id} className="analysis-item">
-                        <span>{item.symbol}</span>
-                        <span>{item.trend}</span>
+                    <li key={item} className="analysis-item">
+                        <span>{item}</span>
+                        <span>{item}</span>
                     </li>
                 ))}
             </ul>
