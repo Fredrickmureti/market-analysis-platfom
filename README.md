@@ -1,3 +1,4 @@
+````markdown
 # Trading Bot with Machine Learning Predictions
 
 This project is a trading bot application that fetches real-time market data, performs analysis, and makes predictions using machine learning models. The application is built using Node.js for the backend, React for the frontend, and Python for the machine learning model.
@@ -17,57 +18,94 @@ This project is a trading bot application that fetches real-time market data, pe
 
 ## Installation
 
-1. **Clone the Repository:**
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/mt-trading-bot.git
+cd mt-trading-bot
+```
+````
+
+### Backend Setup
+
+1. **Navigate to the backend directory:**
 
    ```bash
-   git clone https://github.com/yourusername/mt-trading-bot.git
-   cd mt-trading-bot
-   Backend Setup:
+   cd backend
    ```
 
-Navigate to the backend directory:
+2. **Create and activate a Python virtual environment:**
 
-cd backend
-Create and activate a Python virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-python -m venv venv
-source venv/bin/activate # On Windows use `venv\Scripts\activate`
-Install Python dependencies:
+3. **Install Python dependencies:**
 
-pip install pandas numpy statsmodels
-Install Node.js dependencies:
+   ```bash
+   pip install pandas numpy statsmodels
+   ```
 
-npm install
-Frontend Setup:
+4. **Install Node.js dependencies:**
 
-Navigate to the frontend directory:
+   ```bash
+   npm install
+   ```
 
-cd ../frontend
-Install Node.js dependencies:
+### Frontend Setup
 
-npm install
-Configuration
-API Keys:
+1. **Navigate to the frontend directory:**
 
-Update the backend/config.js file with your MetalPriceAPI key:
+   ```bash
+   cd ../frontend
+   ```
 
-module.exports = {
-mongoURI: 'your_mongodb_uri',
-metalPriceApiKey: 'your_metalpriceapi_key', // Replace with your actual API key
-};
-Running the Application
-Start the Python Virtual Environment:
+2. **Install Node.js dependencies:**
 
-source venv/bin/activate # On Windows use `venv\Scripts\activate`
-Start the Backend Server:
+   ```bash
+   npm install
+   ```
 
-cd backend
-npm run dev
-Start the Frontend Server:
+### Configuration
 
-cd frontend
-npm run dev
-Usage
-Open your browser and navigate to http://localhost:3000 to view the dashboard.
-Use the controls to select the base currency, target currencies, interval, account size, and risk percentage.
-The dashboard will display real-time market data, analysis, and predictions.
+1. **API Keys:**
+
+   Update the `backend/config.js` file with your MetalPriceAPI key:
+
+   ```javascript
+   module.exports = {
+     mongoURI: "your_mongodb_uri",
+     metalPriceApiKey: "your_metalpriceapi_key", // Replace with your actual API key
+   };
+   ```
+
+### Running the Application
+
+1. **Start the Python Virtual Environment:**
+
+   ```bash
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+2. **Start the Backend Server:**
+
+   ```bash
+   cd backend
+   npm run dev
+   ```
+
+3. **Start the Frontend Server:**
+
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+
+## Usage
+
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the dashboard. Use the controls to select the base currency, target currencies, interval, account size, and risk percentage. The dashboard will display real-time market data, analysis, and predictions.
+
+```
+
+```
