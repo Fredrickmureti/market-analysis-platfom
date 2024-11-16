@@ -8,10 +8,10 @@ const cors = require('cors');
 
 const app = express();
 
-// configure CORS
+// Configure CORS
 app.use(cors({
-	origin: "https://market-analysis-platfom-front-end.vercel.app',
-	methods: ['GET', 'POST', 'DELETE']
+    origin: "https://market-analysis-platfom-front-end.vercel.app", 
+    methods: ['GET', 'POST', 'DELETE']
 }));
 app.use(express.json());
 
