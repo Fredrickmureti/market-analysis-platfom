@@ -8,8 +8,11 @@ const cors = require('cors');
 
 const app = express();
 
-
-app.use(cors());
+// configure CORS
+app.use(cors({
+	origin: "https://market-analysis-platfom-front-end.vercel.app',
+	methods: ['GET', 'POST', 'DELETE']
+}));
 app.use(express.json());
 
 mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
